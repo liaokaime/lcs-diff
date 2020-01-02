@@ -1,0 +1,22 @@
+{
+  "name": "lcs-diff",
+  "version": "1.0.0",
+  "description": "A tool to compare the difference between two lists",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liaokaime/lcs-diff.git"
+  },
+  "author": "liaokai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liaokaime/lcs-diff/issues"
+  },
+  "homepage": "https://github.com/liaokaime/lcs-diff#readme",
+  "devDependencies": {
+    "typescript": "^3.7.4"
+  }
+}
