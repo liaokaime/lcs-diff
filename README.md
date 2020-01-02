@@ -8,7 +8,7 @@ npm i lcs-diff
 
 # Usage
 ```typescript
-import {IComparison,LCS} from "lcs-diff/dist";
+import {LCS} from "lcs-diff/dist";
 
 let lcs =new LCS({
     content : {
