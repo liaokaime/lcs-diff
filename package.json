@@ -1,6 +1,6 @@
 {
   "name": "lcs-diff",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A tool to compare the difference between two lists",
   "main": "dist/index.js",
   "scripts": {
@@ -19,5 +19,5 @@
   "devDependencies": {
     "typescript": "^3.7.4"
   },
-  "keywords": ["lcs-diff"]
+  "keywords": ["lcs-diff","差异"]
 }

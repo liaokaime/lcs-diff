@@ -7,7 +7,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var LCS = /** @class */ (function () {
     function LCS(params) {
         this.params = params;
-        this.diffrents = this.getDiff();
     }
     //获取矩阵
     LCS.prototype.getMatrix = function () {
@@ -72,7 +71,7 @@ var LCS = /** @class */ (function () {
         return relations;
     };
     //获取异同
-    LCS.prototype.getDiff = function () {
+    LCS.prototype._getDiff = function () {
         var listFir = this.params.content.listA;
         var listSec = this.params.content.listB;
         var relations = this.getReleations();
@@ -129,15 +128,29 @@ var LCS = /** @class */ (function () {
             }
         }
     };
+    LCS.prototype.checkParams = function () {
+        var listFir = this.params.content.listA;
+        var listSec = this.params.content.listB;
+        return listFir.constructor === Array && listSec.constructor === Array;
+    };
+    LCS.prototype.getDiff = function () {
+        if (this.checkParams()) {
+            return this._getDiff();
+        }
+        else {
+            return [];
+        }
+    };
     //获取相似度
     LCS.prototype.getSimilarity = function () {
         var equal = 0;
-        this.diffrents.forEach(function (value) {
+        var diffrents = this.getDiff();
+        diffrents.forEach(function (value) {
             if (value.equals) {
                 equal++;
             }
         });
-        var similarity = equal / this.diffrents.length;
+        var similarity = equal / diffrents.length;
         return similarity > 0 ? similarity : 0;
     };
     return LCS;

@@ -17,10 +17,11 @@ interface IParam<T> {
 }
 export declare class LCS<T> {
     private readonly params;
-    private readonly diffrents;
     constructor(params: IParam<NonNullable<T>>);
     private getMatrix;
     private getReleations;
+    private _getDiff;
+    private checkParams;
     getDiff(): IComparison<T>[];
     getSimilarity(): number;
 }

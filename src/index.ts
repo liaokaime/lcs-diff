@@ -29,11 +29,9 @@ interface IParam<T>{
 
 export class LCS<T> {
     private readonly params: IParam<NonNullable<T>>;
-    private readonly diffrents : IComparison<T>[];
 
     constructor(params : IParam<NonNullable<T>>) {
         this.params = params;
-        this.diffrents = this.getDiff();
     }
 
     //获取矩阵
@@ -98,7 +96,7 @@ export class LCS<T> {
     }
 
     //获取异同
-    public getDiff():IComparison<T>[]{
+    private _getDiff():IComparison<T>[]{
         let listFir = this.params.content.listA;
         let listSec = this.params.content.listB;
         let relations = this.getReleations();
@@ -155,15 +153,30 @@ export class LCS<T> {
         }
     }
 
+    private checkParams() : boolean{
+        let listFir = this.params.content.listA;
+        let listSec = this.params.content.listB;
+        return listFir.constructor === Array && listSec.constructor === Array;
+    }
+
+    public getDiff():IComparison<T>[]{
+        if(this.checkParams()){
+            return this._getDiff();
+        }else{
+            return []
+        }
+    }
+
     //获取相似度
     public getSimilarity():number{
         let equal = 0;
-        this.diffrents.forEach(value => {
+        let diffrents = this.getDiff();
+        diffrents.forEach(value => {
             if (value.equals){
                 equal ++;
             }
         });
-        let similarity = equal / this.diffrents.length;
+        let similarity = equal / diffrents.length;
         return similarity > 0 ? similarity : 0;
     }
 }
