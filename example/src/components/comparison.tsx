@@ -43,21 +43,22 @@ export class Comparison extends Component<IProps,IState>{
             <div style={{display:"flex",flexDirection:"column"}}>
                 <div style={{display: "flex"}}>
                     <div style={{flex:1,display: "flex",flexDirection: "column"}}>
+                        <h1>Manually</h1>
                         <div style={{flexDirection: "row",justifyContent: "start",alignItems: "start"}}>
                             ListA
                             <ComparisonInputs onChange={texts => this.setState({firstTexts : texts})}/>
-                            <div>
+                            <div style={{width:"100%",wordBreak:"break-all"}}>
                                 Inputs：{JSON.stringify(firstTexts)}
                             </div>
                         </div>
-                        <div style={{marginTop: 20}}>
+                        <div style={{marginTop: 20,wordBreak:"break-all",wordWrap:"break-word"}}>
                             ListB
                             <ComparisonInputs onChange={texts => this.setState({secendTexts : texts})}/>
-                            <div>
+                            <div style={{width:"100%",wordBreak:"break-all"}}>
                                 Inputs：{JSON.stringify(secendTexts)}
                             </div>
                         </div>
-                        <div style={{backgroundColor:"rgb(100,140,240)",textAlign: "center"}} onClick={()=>{
+                        <div style={{cursor: "pointer",backgroundColor:"rgb(100,140,240)",textAlign: "center"}} onClick={()=>{
                             let lcs = new LCS({
                                 content : {
                                     listA : firstTexts,
@@ -79,6 +80,7 @@ export class Comparison extends Component<IProps,IState>{
                         </div>
                     </div>
                     <div style={{flex : 1,display:"flex",flexDirection: "column"}}>
+                        <h1>Auto</h1>
                         <textarea value={articelA} style={{width: '100%',height:150}}  placeholder={"Please enter the article A"} onChange={value => {
                             this.setState({articelA : value.target.value},);
                         }}/>
@@ -91,7 +93,7 @@ export class Comparison extends Component<IProps,IState>{
                         <div style={{width:"100%",wordBreak:"break-all"}}>
                             Inputs：{JSON.stringify(articelB_Ary)}
                         </div>
-                        <div style={{backgroundColor:"rgb(100,140,240)",textAlign: "center"}} onClick={()=>{
+                        <div style={{cursor: "pointer",backgroundColor:"rgb(100,140,240)",textAlign: "center"}} onClick={()=>{
                             let lcs =new LCS({
                                 content : {
                                     listA : articelA_Ary,
@@ -111,6 +113,10 @@ export class Comparison extends Component<IProps,IState>{
                             Comparison
                         </div>
                     </div>
+                </div>
+
+                <div>
+                    <h1>Result</h1>
                 </div>
                 <div style={{display:"flex",flexDirection : "row",flexWrap: "wrap",width: "100%"}}>
                     {

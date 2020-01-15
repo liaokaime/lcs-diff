@@ -1,6 +1,9 @@
 # lcs-diff
 A tool to compare the difference between two lists
 
+# Example
+Preview link [https://liaokaime.github.io/lcs-diff/](https://liaokaime.github.io/lcs-diff/)
+
 # Installation
 ```
 npm i lcs-diff

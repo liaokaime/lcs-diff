@@ -19,5 +19,5 @@
   "devDependencies": {
     "typescript": "^3.7.4"
   },
-  "keywords": ["lcs-diff","差异"]
+  "keywords": ["lcs-diff","差异","文本对比"]
 }
