@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/lcs-diff/example/build/index.html/static/css/main.27fd15f6.chunk.css",
-    "main.js": "/lcs-diff/example/build/index.html/static/js/main.f3e8ca52.chunk.js",
-    "main.js.map": "/lcs-diff/example/build/index.html/static/js/main.f3e8ca52.chunk.js.map",
-    "runtime-main.js": "/lcs-diff/example/build/index.html/static/js/runtime-main.3e6692bb.js",
-    "runtime-main.js.map": "/lcs-diff/example/build/index.html/static/js/runtime-main.3e6692bb.js.map",
-    "static/js/2.61af40af.chunk.js": "/lcs-diff/example/build/index.html/static/js/2.61af40af.chunk.js",
-    "static/js/2.61af40af.chunk.js.map": "/lcs-diff/example/build/index.html/static/js/2.61af40af.chunk.js.map",
-    "index.html": "/lcs-diff/example/build/index.html/index.html",
-    "precache-manifest.614362411f0adbca483de307b0039698.js": "/lcs-diff/example/build/index.html/precache-manifest.614362411f0adbca483de307b0039698.js",
-    "service-worker.js": "/lcs-diff/example/build/index.html/service-worker.js",
-    "static/css/main.27fd15f6.chunk.css.map": "/lcs-diff/example/build/index.html/static/css/main.27fd15f6.chunk.css.map",
-    "static/js/2.61af40af.chunk.js.LICENSE": "/lcs-diff/example/build/index.html/static/js/2.61af40af.chunk.js.LICENSE"
+    "main.css": "/lcs-diff/example/build/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/lcs-diff/example/build/static/js/main.333c763a.chunk.js",
+    "main.js.map": "/lcs-diff/example/build/static/js/main.333c763a.chunk.js.map",
+    "runtime-main.js": "/lcs-diff/example/build/static/js/runtime-main.c367bc55.js",
+    "runtime-main.js.map": "/lcs-diff/example/build/static/js/runtime-main.c367bc55.js.map",
+    "static/js/2.61af40af.chunk.js": "/lcs-diff/example/build/static/js/2.61af40af.chunk.js",
+    "static/js/2.61af40af.chunk.js.map": "/lcs-diff/example/build/static/js/2.61af40af.chunk.js.map",
+    "index.html": "/lcs-diff/example/build/index.html",
+    "precache-manifest.a58201373e533e299ef2c568965b7501.js": "/lcs-diff/example/build/precache-manifest.a58201373e533e299ef2c568965b7501.js",
+    "service-worker.js": "/lcs-diff/example/build/service-worker.js",
+    "static/css/main.27fd15f6.chunk.css.map": "/lcs-diff/example/build/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.61af40af.chunk.js.LICENSE": "/lcs-diff/example/build/static/js/2.61af40af.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.3e6692bb.js",
+    "static/js/runtime-main.c367bc55.js",
     "static/js/2.61af40af.chunk.js",
     "static/css/main.27fd15f6.chunk.css",
-    "static/js/main.f3e8ca52.chunk.js"
+    "static/js/main.333c763a.chunk.js"
   ]
 }
